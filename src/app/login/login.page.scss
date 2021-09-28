@@ -1,27 +1,71 @@
+@font-face {   
+    font-family: 'Quicksand';
+    src: url('../../assets/fonts/Quicksand-Medium.ttf');
+  }
+@font-face {   
+    font-family: 'Quicksand-B';
+    src: url('../../assets/fonts/Quicksand-Bold.ttf');
+}
+
 $bg-dark: #102754;
 $bg-violet: #453cc9;
 $bg-blue: #22aff1;
 $bg-white: #fff;
 
+ion-content,
+ion-header{
+    --ion-background-color: #fff;
+    font-family: Quicksand-B !important;
+}
 
-
-.a-password{
-    text-decoration: none;
-    color:#fff;
-    text-align: center;
-    span{
-        color:#22aff1;
+.op-input {
+    border-bottom:$bg-dark 3px solid;
+    height: 45px;
+    margin: 0 auto;
+    padding: 0;
+    &-label{
+        text-align: center;
+        height: 20px;
+        display: inline-block;
+        color: $bg-dark;
+        font-size: 16px;
+    }&-field{
+        height: 20px;
+        display: inline-block;
+        background: #fff;
+        color: $bg-dark;
+        font-size: 15px;
     }
-    
 }
 
 
-.c-cancelar{
-       
-        background-color: Transparent;
-        background-repeat:no-repeat;
-        border: none;
-        cursor:pointer;
-        overflow: hidden;        
+
+.btn-primario{
+    font-family: Quicksand-b;
+    --background: #453cc9;
+    --background-activated: #453cc9;
+    --border-radius: 100px;
+    text-transform: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn-cancelar{
+    font-family: Quicksand-b;
+    --background-activated: #fff;
+    text-transform: none;
+    text-align: center;
+    color: $bg-violet;
+    font-size: 15px;
+}
+
+.a-password{
+    font-size: 14px;
+    text-decoration: none;
+    color:$bg-dark;
+    text-align: center;
+    span{
+        color:$bg-blue;
+    }
     
 }

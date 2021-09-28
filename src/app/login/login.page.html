@@ -1,30 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>TeLlevoAPP</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="body">
   <form>
-    <ion-item lines="full">
-      <ion-label position="floating"> <ion-icon name="person"></ion-icon> Correo 
-      </ion-label>
-      <ion-input type="text" required></ion-input>
-    </ion-item>
-
-    <ion-item lines="full">
-      <ion-label position="floating"> <ion-icon name="keypad"></ion-icon> Contraseña</ion-label>
-      <ion-input type="password" required></ion-input>
-    </ion-item>
-
     <ion-row>
-      <ion-col>
-        <div class="ion-text-center"><a [routerLink]="['/restablecer-c']" class="small-text a-password ion-text-center" > Olvide mi <span>contraseña</span></a></div>
-        <ion-button class="btn-primario" color="tertiary" type="submit"  expand="block" [routerLink]="['/home']" ><ion-icon name="send"></ion-icon> Ingresar</ion-button>
-        <ion-button class="btn-secundario c-cancelar"  type="clear"  expand="block"  > Cancelar</ion-button>
+      <ion-col size="10" class="op-input">
+        <ion-item color="transparent" lines="full">
+          <ion-label class="op-input-label "><ion-icon name="person"></ion-icon></ion-label><ion-input class="op-input-field" type="text" required placeholder="Ingresa tu usuario"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="10" class="op-input">
+        <ion-item color="transparent" lines="full">
+          <ion-label class="op-input-label"><ion-icon name="lock-closed"></ion-icon></ion-label><ion-input class="op-input-field" type="password" required placeholder="Ingresa tu contraseña"></ion-input>
+        </ion-item>
+      </ion-col>   
+    </ion-row>
 
-        
-        
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12">
+        <div class="ion-text-center"><a [routerLink]="['/restablecer-c']" class="small-text a-password ion-text-center" > Olvide mi <span>contraseña</span></a></div>
+      </ion-col>
+      <ion-col size="5">
+        <ion-button class="btn-cancelar" fill="clear"  expand="block" >Cancelar</ion-button>
+      </ion-col>
+      <ion-col size="5">
+        <ion-button class="btn-primario" type="submit"  expand="block" [routerLink]="['/home']" >Ingresar</ion-button>
       </ion-col>
     </ion-row>
   </form>
