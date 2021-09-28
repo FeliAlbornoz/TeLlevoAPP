@@ -1,3 +1,9 @@
+$bg-dark: #102754;
+$bg-violet: #453cc9;
+$bg-blue: #22aff1;
+$bg-white: #fff;
+
+
 ion-content {
     #map {
       width: 100%;
@@ -10,3 +16,85 @@ ion-content {
       }
     }
   }
+  @font-face {   
+    font-family: 'Quicksand';
+    src: url('../../assets/fonts/Quicksand-Medium.ttf');
+  }
+@font-face {   
+    font-family: 'Quicksand-B';
+    src: url('../../assets/fonts/Quicksand-Bold.ttf');
+}
+
+
+ion-content{
+    --ion-background-color: #fff;
+    font-family: Quicksand-B !important;
+    --background: #fff;
+    --border:none;
+}
+
+h1{
+    color: $bg-violet;
+    text-align: center;
+    font-size: 38px;
+    padding-top: 80px;
+}
+
+.op-form{
+    padding-top: 25px;
+}
+
+.op-input {
+    border-bottom:$bg-dark 3px solid;
+    height: 45px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 30px;
+    &-label{
+        text-align: center;
+        height: 20px;
+        display: inline-block;
+        color: $bg-dark;
+        font-size: 16px;
+    }&-field{
+        height: 20px;
+        display: inline-block;
+        background: #fff;
+        color: $bg-dark;
+        font-size: 15px;
+    }
+}
+
+
+
+.btn-primario{
+    font-family: Quicksand-b;
+    --background: #453cc9;
+    --background-activated: #453cc9;
+    --border-radius: 100px;
+    text-transform: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn-cancelar{
+    font-family: Quicksand-b;
+    --background-activated: #fff;
+    text-transform: none;
+    text-align: center;
+    color: $bg-violet;
+    font-size: 15px;
+}
+
+.a-password{
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    color:$bg-dark;
+    text-align: center;
+    margin-bottom: 35px;
+    span{
+        color:$bg-blue;
+    }
+    
+}
