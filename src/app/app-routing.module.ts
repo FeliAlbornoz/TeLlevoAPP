@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'restablecer-c',
     loadChildren: () => import('./restablecer-c/restablecer-c.module').then( m => m.RestablecerCPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
 
 ];
 
