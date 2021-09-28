@@ -12,10 +12,22 @@ $bg-violet: #453cc9;
 $bg-blue: #22aff1;
 $bg-white: #fff;
 
-ion-content,
-ion-header{
+ion-content{
     --ion-background-color: #fff;
     font-family: Quicksand-B !important;
+    --background: #fff;
+    --border:none;
+}
+
+h1{
+    color: $bg-violet;
+    text-align: center;
+    font-size: 38px;
+    padding-top: 80px;
+}
+
+.op-form{
+    padding-top: 25px;
 }
 
 .op-input {
@@ -23,6 +35,7 @@ ion-header{
     height: 45px;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 30px;
     &-label{
         text-align: center;
         height: 20px;
@@ -60,10 +73,12 @@ ion-header{
 }
 
 .a-password{
-    font-size: 14px;
+    display: inline-block;
+    font-size: 15px;
     text-decoration: none;
     color:$bg-dark;
     text-align: center;
+    margin-bottom: 35px;
     span{
         color:$bg-blue;
     }
