@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'restablecer-c',
+    loadChildren: () => import('./restablecer-c/restablecer-c.module').then( m => m.RestablecerCPageModule)
   },
+
 ];
 
 @NgModule({
