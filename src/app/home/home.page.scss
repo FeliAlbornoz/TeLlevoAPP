@@ -1,3 +1,4 @@
+$bg-violet: #453cc9;
 #container {
   text-align: center;
 
@@ -24,4 +25,46 @@
 
 #container a {
   text-decoration: none;
+}
+
+
+
+
+.animacionhome {
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: 2px;
+}
+
+.op-img1{
+  height: 110px;
+}
+.op-img2{
+  height: 130px;
+  margin-bottom: -20px;
+}
+
+h1{
+  text-align: center;
+  font-size: 26px;
+  color: $bg-violet;
+}
+
+
+
+
+h2{
+  text-align: center;
+  font-size: 26px;
+  color: $bg-violet;
+}
+
+.op-cont{
+  border:#453cc9 2px solid;
+  width: 80%;
+  height: 30%;
+  margin: 0 auto;
+  margin-top: 85px;
+  border-radius: 20px;
 }
