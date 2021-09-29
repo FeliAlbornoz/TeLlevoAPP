@@ -1,23 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Restablecer Contraseña</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
-  <div id="container">
-    <ion-item>
-      <ion-label position="floating">Nombre de usuario</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
+<ion-content class="body">
+  <ion-text>
+    <h1>TeLlevoAPP</h1>
+  </ion-text>
+  <form class="op-form">
+    <ion-row>
+      <ion-col size="10" class="op-input">
+        <ion-item color="transparent" lines="full">
+          <ion-label class="op-input-label "><ion-icon name="person"></ion-icon></ion-label><ion-input class="op-input-field" type="text" required placeholder="Ingresa tu usuario"></ion-input>
+        </ion-item>
+      </ion-col>  
+    </ion-row>
 
- 
-
-  </div>
-  <ion-input    type="submit" [routerLink]="['/login']">
-    Recuperar
-  </ion-input>
-
-  <div class= "restablecerC"><ion-img src="https://cdn.discordapp.com/attachments/693611787425415290/892432057760874556/Captura_de_pantalla_2021-09-28_122538.png"></ion-img>
-  </div>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="5">
+        <ion-button class="btn-cancelar" fill="clear"  expand="block" >Cancelar</ion-button>
+      </ion-col>
+      <ion-col size="5">
+        <ion-button class="btn-primario" type="submit"  expand="block" [routerLink]="['/login']" >Recuperar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>
