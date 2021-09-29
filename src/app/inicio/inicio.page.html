@@ -15,8 +15,8 @@
       </ion-label>
     </ion-list-header>
   
-    <ion-item>
-      <ion-select interface="popover">
+    <ion-item color="none">
+      <ion-select interface="popover" color="none">
         <ion-select-option value="1">Sede Alameda</ion-select-option>
         <ion-select-option value="2">Sede Antonio Varas</ion-select-option>
         <ion-select-option value="3">Sede Educación Continua</ion-select-option>
@@ -38,6 +38,14 @@
     <ion-label position="stacked">¿Dónde vas?</ion-label>
     <ion-input></ion-input>
   </ion-item>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="5">
+      <ion-button class="btn-cancelar" fill="clear"  expand="block" >Cancelar</ion-button>
+    </ion-col>
+    <ion-col size="5">
+      <ion-button class="btn-primario" type="submit"  expand="block" [routerLink]="['/inicio']" >Buscar</ion-button>
+    </ion-col>
+  </ion-row>
 
 </ion-content>
 

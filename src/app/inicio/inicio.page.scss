@@ -25,7 +25,36 @@ ion-content {
     src: url('../../assets/fonts/Quicksand-Bold.ttf');
 }
 
+ion-title{
+    color: #fff;
+    justify-content: center;
+}
+ion-toolbar{
+    --background: #453cc9;
+}
 
+ion-input{
+    border-bottom: 100px;
+}
+
+ion-item{
+    --background: #fff;
+    color: #453cc9;
+    --ion-item-background: #fff;
+}
+
+ion-list-header{
+    --background: #fff;
+}
+.item-native{
+    --background: transparent;
+}
+.item-color{
+    --background: transparent;
+}
+ion-label{
+    color: #453cc9;
+}
 ion-content{
     --ion-background-color: #fff;
     font-family: Quicksand-B !important;
@@ -86,15 +115,3 @@ h1{
     font-size: 15px;
 }
 
-.a-password{
-    display: inline-block;
-    font-size: 15px;
-    text-decoration: none;
-    color:$bg-dark;
-    text-align: center;
-    margin-bottom: 35px;
-    span{
-        color:$bg-blue;
-    }
-    
-}
