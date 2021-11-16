@@ -7,7 +7,7 @@ $bg-white: #fff;
 ion-content {
     #map {
       width: 100%;
-      height: 50%;
+      height: 40%;
       opacity: 0;
       transition: opacity 150ms ease-in;
       display: block;
@@ -30,11 +30,17 @@ ion-title{
     text-align: center;
 }
 ion-toolbar{
-    --background: #453cc9;
+    --background:$bg-violet;
 }
 
 ion-input{
     border-bottom: 100px;
+    text-align: center;
+    font-family: Quicksand-B !important;
+}
+
+ion-select-option{
+    text-align: center;
 }
 
 ion-item{
@@ -53,7 +59,10 @@ ion-list-header{
     --background: transparent;
 }
 ion-label{
-    color: #453cc9;
+    color: $bg-violet;
+    font-size: 10px;
+    font-family: Quicksand-B !important;
+    display: inline-block;
 }
 ion-content{
     --ion-background-color: #fff;
@@ -73,34 +82,26 @@ h1{
     padding-top: 25px;
 }
 
-.op-input {
-    border-bottom:$bg-dark 3px solid;
-    height: 45px;
+
+.full-width-item {
+    width: 90%;
+    border-bottom: 2px solid $bg-violet;
     margin: 0 auto;
-    padding: 0;
-    margin-bottom: 30px;
-    &-label{
-        text-align: center;
-        height: 20px;
-        display: inline-block;
-        color: $bg-dark;
-        font-size: 16px;
-    }&-field{
-        height: 20px;
-        display: inline-block;
-        background: #fff;
-        color: $bg-dark;
-        font-size: 15px;
-    }
+    padding: 0px;
 }
 
-
+.half-width-item {
+    display: inline-block;
+    width: 40%;
+    border-bottom: 2px solid $bg-violet;
+    margin: 0 5%;
+}
 
 .btn-primario{
     font-family: Quicksand-b;
     --background: #453cc9;
     --background-activated: #453cc9;
-    --border-radius: 100px;
+    --border-radius: 5px;
     text-transform: none;
     text-align: center;
     font-size: 15px;
