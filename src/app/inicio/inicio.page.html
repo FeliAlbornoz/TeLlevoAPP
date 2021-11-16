@@ -5,45 +5,54 @@
 </ion-header>
 
 <ion-content>
+  <div id="map">
 
-  <div id="map"></div>
+  </div>
+      <ion-item color="none" lines="none">
+        <ion-label position="stacked">Selecciona tu sede</ion-label>
+        <ion-select interface="popover" color="none">
+          <ion-select-option value="1">Sede Alameda</ion-select-option>
+          <ion-select-option value="2">Sede Antonio Varas</ion-select-option>
+          <ion-select-option value="3">Sede Educación Continua</ion-select-option>
+          <ion-select-option value="4">Sede Maipú</ion-select-option>
+          <ion-select-option value="5">Sede Melipilla</ion-select-option>
+          <ion-select-option value="6">Sede Padre Alonso de Ovalle</ion-select-option>
+          <ion-select-option value="7">Sede Plaza Norte</ion-select-option>
+          <ion-select-option value="8">Sede Plaza Oeste</ion-select-option>
+          <ion-select-option value="9">Sede Plaza Vespucio</ion-select-option>
+          <ion-select-option value="10">Sede Puente Alto</ion-select-option>
+          <ion-select-option value="11">Sede San Bernardo</ion-select-option>
+          <ion-select-option value="12">Sede San Carlos de Apoquindo</ion-select-option>
+          <ion-select-option value="13">Sede San Joaquín</ion-select-option>
+        </ion-select>
+      </ion-item>
 
-  <ion-list>
-    <ion-list-header>
-      <ion-label>
-        Selecciona tu sede
-      </ion-label>
-    </ion-list-header>
-  
-    <ion-item color="none">
-      <ion-select interface="popover" color="none">
-        <ion-select-option value="1">Sede Alameda</ion-select-option>
-        <ion-select-option value="2">Sede Antonio Varas</ion-select-option>
-        <ion-select-option value="3">Sede Educación Continua</ion-select-option>
-        <ion-select-option value="4">Sede Maipú</ion-select-option>
-        <ion-select-option value="5">Sede Melipilla</ion-select-option>
-        <ion-select-option value="6">Sede Padre Alonso de Ovalle</ion-select-option>
-        <ion-select-option value="7">Sede Plaza Norte</ion-select-option>
-        <ion-select-option value="8">Sede Plaza Oeste</ion-select-option>
-        <ion-select-option value="9">Sede Plaza Vespucio</ion-select-option>
-        <ion-select-option value="10">Sede Puente Alto</ion-select-option>
-        <ion-select-option value="11">Sede San Bernardo</ion-select-option>
-        <ion-select-option value="12">Sede San Carlos de Apoquindo</ion-select-option>
-        <ion-select-option value="13">Sede San Joaquín</ion-select-option>
-
-      </ion-select>
-    </ion-item>
-  </ion-list>
-  <ion-item>
+  <ion-item class="full-width-item ion-no-padding" lines="none">
     <ion-label position="stacked">¿Dónde vas?</ion-label>
-    <ion-input></ion-input>
+    <ion-input type="text" placeholder="Calle 1 con Camino blanco"></ion-input>
+  </ion-item>
+  <ion-item class="half-width-item ion-no-padding" lines="none">
+    <ion-label position="stacked">Tarifa</ion-label>
+    <ion-input type="text" placeholder="2000"></ion-input>
+  </ion-item>
+  <ion-item class="half-width-item ion-no-padding" lines="none">
+    <ion-label position="stacked">Pasajeros</ion-label>
+    <ion-input type="number" placeholder="1"></ion-input>
+  </ion-item>
+  <ion-item class="half-width-item ion-no-padding" lines="none">
+    <ion-label position="stacked">Hora salida</ion-label>
+    <ion-input type="text" placeholder="17:30"></ion-input>
+  </ion-item>
+  <ion-item class="half-width-item ion-no-padding" lines="none">
+    <ion-label position="stacked">Discapacidad</ion-label>
+    <ion-input type="text" placeholder="Sí/No"></ion-input>
   </ion-item>
   <ion-row class="ion-justify-content-center">
     <ion-col size="5">
       <ion-button class="btn-cancelar" fill="clear"  expand="block" >Cancelar</ion-button>
     </ion-col>
     <ion-col size="5">
-      <ion-button class="btn-primario" type="submit"  expand="block" [routerLink]="['/inicio']" >Buscar</ion-button>
+      <ion-button class="btn-primario" type="submit"  expand="block" [routerLink]="['/inicio']" >Crear</ion-button>
     </ion-col>
   </ion-row>
 
