@@ -1,0 +1,89 @@
+@font-face {   
+    font-family: 'Quicksand';
+    src: url('../../../../assets/fonts/Quicksand-Medium.ttf');
+  }
+  @font-face {   
+    font-family: 'Quicksand-B';
+    src: url('../../../../assets/fonts/Quicksand-Bold.ttf');
+  }
+  
+  $bg-dark: #102754;
+  $bg-violet: #453cc9;
+  $bg-blue: #22aff1;
+  $bg-white: #fff;
+  
+
+
+ion-title{
+    color: #fff;
+    text-align: center;
+}
+ion-toolbar{
+    --background: #453cc9;
+}
+
+h1{
+    color:$bg-violet;
+    font-size: 35px;
+    font-family: Quicksand-b;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+}
+
+img{
+    width:150px;
+    height:150px;
+    border-radius:150px;
+    display: flex;
+    margin: auto;
+}
+
+.atras{
+    margin-top: 22px;
+    font-size: 33px;
+
+}
+
+h3{
+    color: #847fc0;
+    text-align: center;
+    font-family: Quicksand-b;
+    font-size: 15px;
+
+}
+
+h2{
+    color: $bg-dark;
+    text-align: center;
+    font-family: Quicksand-b;
+    font-size: 20px;
+    margin-top: -11px;
+    
+}
+
+.icono{
+    font-size: 20px;
+    color:#453cc9;
+    margin-left: 35%;  
+}
+
+.font{
+    font-family: 'Quicksand-B';
+    color:#102754;
+    margin-left: 5px;
+}
+
+.btn-primario{
+    font-family: Quicksand-b;
+    --background: #453cc9;
+    --background-activated: #453cc9;
+    --border-radius: 100px;
+    --border-width: 1px;
+    text-transform: none;
+    font-size: 15px;
+    margin-top: 30px;
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
