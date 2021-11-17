@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CrudService } from 'src/app/crud.service';
 
 declare var google;
 
@@ -9,9 +10,24 @@ declare var google;
 })
 export class InicioPage implements OnInit {
 
-  map = null;
 
-  constructor() { }
+  constructor(private crud: CrudService) { }
+
+  async agregar(txtSede:HTMLSelectElement, txtDestino:HTMLInputElement, txtTarifa:HTMLInputElement, txtPasajero:HTMLInputElement, txtHora:HTMLInputElement, txtPatente:HTMLInputElement){
+    const datos = [{"Origen": txtSede.value,
+                    "Destino": txtDestino.value,
+                    "Tarifa": txtTarifa.value,
+                    "Pasajero": txtPasajero.value,
+                    "Hora": txtHora.value,
+                    "Patente": txtPatente.value,
+    }]
+
+    await this.crud.agregar(datos);
+  }
+
+  
+
+  map = null;
 
   ngOnInit() {
     this.loadMap();

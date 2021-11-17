@@ -19,7 +19,7 @@ export class CrudService {
     await this.storage.set(key, valor);
   }
 
-  async agregar(valor: string){
+  async agregar(valor: any){
     let id = await this.storage.length() + 1;
     await this.storage.set(id.toString(), valor)
   }

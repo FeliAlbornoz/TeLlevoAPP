@@ -10,7 +10,7 @@
   </div>
       <ion-item color="none" lines="none">
         <ion-label position="stacked">Selecciona tu sede</ion-label>
-        <ion-select interface="popover" color="none">
+        <ion-select interface="popover" color="none" #txtSede>
           <ion-select-option value="1">Sede Alameda</ion-select-option>
           <ion-select-option value="2">Sede Antonio Varas</ion-select-option>
           <ion-select-option value="3">Sede Educación Continua</ion-select-option>
@@ -29,30 +29,30 @@
 
   <ion-item class="full-width-item ion-no-padding" lines="none">
     <ion-label position="stacked">¿Dónde vas?</ion-label>
-    <ion-input type="text" placeholder="Calle 1 con Camino blanco"></ion-input>
+    <ion-input type="text" placeholder="Calle 1 con Camino blanco" #txtDestino></ion-input>
   </ion-item>
   <ion-item class="half-width-item ion-no-padding" lines="none">
     <ion-label position="stacked">Tarifa</ion-label>
-    <ion-input type="text" placeholder="2000"></ion-input>
+    <ion-input type="text" placeholder="2000" #txtTarifa></ion-input>
   </ion-item>
   <ion-item class="half-width-item ion-no-padding" lines="none">
     <ion-label position="stacked">Pasajeros</ion-label>
-    <ion-input type="number" placeholder="1"></ion-input>
+    <ion-input type="number" placeholder="1" #txtPasajero></ion-input>
   </ion-item>
   <ion-item class="half-width-item ion-no-padding" lines="none">
     <ion-label position="stacked">Hora salida</ion-label>
-    <ion-input type="text" placeholder="17:30"></ion-input>
+    <ion-input type="text" placeholder="17:30" #txtHora></ion-input>
   </ion-item>
   <ion-item class="half-width-item ion-no-padding" lines="none">
-    <ion-label position="stacked">Discapacidad</ion-label>
-    <ion-input type="text" placeholder="Sí/No"></ion-input>
+    <ion-label position="stacked">Patente</ion-label>
+    <ion-input type="text" placeholder="ABCD12" #txtPatente></ion-input>
   </ion-item>
   <ion-row class="ion-justify-content-center">
     <ion-col size="5">
       <ion-button class="btn-cancelar" fill="clear"  expand="block" [routerLink]="['/home']" >Cancelar</ion-button>
     </ion-col>
     <ion-col size="5">
-      <ion-button class="btn-primario" type="submit"  expand="block" href='/login' >Crear</ion-button>
+      <ion-button class="btn-primario" type="submit"  expand="block" (click)="agregar(txtSede, txtDestino, txtTarifa, txtPasajero, txtHora, txtPatente)">Crear</ion-button>
     </ion-col>
   </ion-row>
 
