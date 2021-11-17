@@ -10,6 +10,7 @@ declare var google;
 })
 export class InicioPage implements OnInit {
 
+  
 
   constructor(private crud: CrudService) { }
 
@@ -24,8 +25,6 @@ export class InicioPage implements OnInit {
 
     await this.crud.agregar(datos);
   }
-
-  
 
   map = null;
 

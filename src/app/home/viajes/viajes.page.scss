@@ -85,3 +85,14 @@ ion-card{
 .margen{
     margin-bottom: 10px;
 }
+
+.half-width-item {
+    display: inline-block;
+    width: 40%;
+    border-bottom: 2px solid $bg-violet;
+    margin: 0 5%;
+}
+
+.boton-crud {
+    margin-top: -20px;
+}
