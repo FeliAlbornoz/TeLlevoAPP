@@ -24,34 +24,7 @@ export class ViajesPage implements OnInit {
     const valor = await this.crud.rescatar(txtKey.value);
     
     if (valor != null) {
-      if (valor[0].Origen = 1) {
-        this.sede = "Sede Alameda";
-      } else if (valor[0].Origen = 2) {
-        this.sede = "Sede Antonio Varas";
-      } else if (valor[0].Origen = 3) {
-        this.sede = "Sede Educación coninua";
-      } else if (valor[0].Origen = 4) {
-        this.sede = "Sede Maipú";
-      } else if (valor[0].Origen = 5) {
-        this.sede = "Sede Melipilla";
-      } else if (valor[0].Origen = 6) {
-        this.sede = "Sede Padre Alonso de Ovalle";
-      } else if (valor[0].Origen = 7) {
-        this.sede = "Sede Plaza Norte";
-      } else if (valor[0].Origen = 8) {
-        this.sede = "Sede Plaza Oeste";
-      } else if (valor[0].Origen = 9) {
-        this.sede = "Sede Plaza Vespucio";
-      } else if (valor[0].Origen = 10) {
-        this.sede = "Sede Puente Alto";
-      } else if (valor[0].Origen = 11) {
-        this.sede = "Sede San Bernardo";
-      } else if (valor[0].Origen = 12) {
-        this.sede = "Sede San Carlos de Apoquindo";
-      } else if (valor[0].Origen = 13) {
-        this.sede = "Sede San Joaquín";
-      }
-
+      this.sede = valor[0].Origen;
       this.destino = valor[0].Destino;
     } else {
       const toast = await this.toast.create({
