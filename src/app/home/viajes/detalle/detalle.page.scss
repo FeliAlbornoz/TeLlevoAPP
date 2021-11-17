@@ -39,9 +39,9 @@ img{
     margin: auto;
 }
 
-.atras{
+.atras1{
     margin-top: 22px;
-    font-size: 33px;
+    font-size: 25px;
 
 }
 
@@ -65,14 +65,19 @@ h2{
 .icono{
     font-size: 20px;
     color:#453cc9;
-    margin-left: 35%;  
+    display: flex;
+    margin:auto;
+    width: auto;
 }
 
 .font{
     font-family: 'Quicksand-B';
     color:#102754;
-    margin-left: 5px;
+    display: block;
+    text-align: center;
+
 }
+
 
 .btn-primario{
     font-family: Quicksand-b;
