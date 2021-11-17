@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Animation, AnimationController } from '@ionic/angular';
 
 @Component({
@@ -8,7 +9,7 @@ import { Animation, AnimationController } from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor(private animationCtrl:AnimationController) { }
+  constructor(private animationCtrl:AnimationController,  ) { }
 
   ngAfterViewInit() {
   const animation = this.animationCtrl  
@@ -21,6 +22,11 @@ export class HomePage {
   .fromTo('opacity', '0.1', '2');
 
   animation.play()
+  
+
   }
+
+
+
 
 }

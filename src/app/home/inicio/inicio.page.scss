@@ -18,11 +18,11 @@ ion-content {
   }
   @font-face {   
     font-family: 'Quicksand';
-    src: url('../../assets/fonts/Quicksand-Medium.ttf');
+    src: url('../../../assets/fonts/Quicksand-Medium.ttf');
   }
 @font-face {   
     font-family: 'Quicksand-B';
-    src: url('../../assets/fonts/Quicksand-Bold.ttf');
+    src: url('../../../assets/fonts/Quicksand-Bold.ttf');
 }
 
 ion-title{
@@ -115,4 +115,3 @@ h1{
     color: $bg-violet;
     font-size: 15px;
 }
-

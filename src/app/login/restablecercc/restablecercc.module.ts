@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RestablecerCPageRoutingModule } from './restablecer-c-routing.module';
+import { RestablecerccPageRoutingModule } from './restablecercc-routing.module';
 
-import { RestablecerCPage } from './restablecer-c.page';
+import { RestablecerccPage } from './restablecercc.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RestablecerCPageRoutingModule
+    RestablecerccPageRoutingModule
   ],
-  declarations: [RestablecerCPage]
+  declarations: [RestablecerccPage]
 })
-export class RestablecerCPageModule {}
+export class RestablecerccPageModule {}

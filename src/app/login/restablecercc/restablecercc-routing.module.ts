@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { RestablecerCPage } from './restablecer-c.page';
+import { RestablecerccPage } from './restablecercc.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: RestablecerCPage
+    component: RestablecerccPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class RestablecerCPageRoutingModule {}
+export class RestablecerccPageRoutingModule {}

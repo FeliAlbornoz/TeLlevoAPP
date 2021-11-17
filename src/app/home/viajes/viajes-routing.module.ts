@@ -1,22 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginPage } from './login.page';
+import { ViajesPage } from './viajes.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage
+    component: ViajesPage
   },
   {
-    path: 'restablecercc',
-    loadChildren:() => import('./restablecercc/restablecercc.module').then(m => m.RestablecerccPageModule)
+    path: 'detalle',
+    loadChildren: () => import('./detalle/detalle.module').then( m => m.DetallePageModule)
   }
-
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class LoginPageRoutingModule {}
+export class ViajesPageRoutingModule {}

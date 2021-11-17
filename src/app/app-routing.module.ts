@@ -9,22 +9,40 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: 'restablecer-c',
-    loadChildren: () => import('./restablecer-c/restablecer-c.module').then( m => m.RestablecerCPageModule)
+    children:[
+      {
+        path:'',
+        loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+
+      },{
+        path: 'inicio',
+        loadChildren:() => import('./home/inicio/inicio.module').then (m => m.InicioPageModule)
+      },
+      {
+        path:'viajes',
+        loadChildren: () => import('./home/viajes/viajes.module').then (m => m.ViajesPageModule)
+      },
+      {
+        path:'detalle',
+        loadChildren:() => import('./home/viajes/detalle/detalle.module').then( m => m.DetallePageModule)
+      }
+    ]
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'inicio',
-    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
-  },  {
-    path: 'viajes',
-    loadChildren: () => import('./viajes/viajes.module').then( m => m.ViajesPageModule)
+    children:[
+      {
+        path:'',
+        loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+
+      },{
+        
+        path:':restablecercc',
+        loadChildren: () => import('./login/restablecercc/restablecercc.module').then (m => m.RestablecerccPageModule)
+
+      }
+    ]
+    
   },
   {
     path: 'detalle',
